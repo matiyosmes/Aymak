@@ -3,7 +3,7 @@
 ### AYMAK PICTURE - Freelance Producer Platform (Front-End)
 
 Developed as a final project for my Internet Programming course, this repository showcases a complete front-end web application built entirely from scratch using HTML5, CSS3, and Vanilla JavaScript. The platform, **AYMAK PICTURE**, is a dual-sided marketplace designed to bridge the gap between clients looking to hire creative talent and freelance producers (like video editors and photographers) seeking work. 
-
+ 
 A major focus of this project was to build the entire interface without relying on modern frameworks or external libraries to solidify an understanding of core web technologies. Additionally, every single page across the application is fully responsive, ensuring the layout adapts smoothly and functions perfectly across desktop, tablet, and mobile devices.
 
 **Key Features & Technical Highlights:**
