@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYMAK PICTURE - Alex Kebede</title>
+    <link rel="stylesheet" href="../CSS/producerprofile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AYMAK PICTURE</div>
+        <a href="#" class="back-link" id="backBtn">← Back to Search</a>
+    </nav>
+
+    <div class="main-layout">
+        <div class="content-column">
+            <header class="profile-header">
+                <div class="profile-image-container">
+                    <img src="../IMAGES/16.webp" alt="Alex Kebede" class="profile-img">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Alex Kebede</h1>
+                    <span class="verified-badge">VERIFIED PRO</span>
+                    <p class="profile-services"><strong>Services:</strong> Video Editor, Colorist, Thumbnail Design</p>
+                    <p class="profile-bio">Specialized in DaVinci Resolve and Adobe Premiere. Based in Addis Ababa.</p>
+                </div>
+            </header>
+
+            <section class="portfolio-section">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="../IMAGES/B.webp" alt="Project 1" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="../IMAGES/A.webp" alt="Project 2" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="../IMAGES/16.webp" alt="Project 3" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="../IMAGES/15.webp" alt="Project 4" class="portfolio-img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews-section">
+                <h2 class="section-title">Reviews (2)</h2>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Alex was very professional. Highly recommended!"</p>
+                    <span class="reviewer-name">- Sarah M.</span>
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar-column">
+            <div class="contact-card">
+                <h3 class="contact-title">Contact Alex</h3>
+                <div class="contact-details">
+                    <p class="contact-row">📞 +251 911 234 567</p>
+                    <p class="contact-row">✉️ alex.kebede@email.com</p>
+                </div>
+                <p class="contact-hint">Have questions? Chat directly.</p>
+                <button class="chat-btn" id="chatBtn">CHAT WITH ALEX</button>
+            </div>
+        </aside>
+    </div>
+
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 id="modalTitle">Login to Chat</h2>
+            
+            <div class="modal-options" id="modalOptions">
+                <button class="modal-btn" onclick="showForm('hire')">I want to hire</button>
+                <button class="modal-btn" onclick="showForm('work')">I want to work</button>
+            </div>
+
+            <form class="auth-form" id="hireForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Sign Up to Chat</button>
+                <button type="button" class="back-form-btn" onclick="resetModal()">Back</button>
+            </form>
+
+            <form class="auth-form" id="workForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="text" placeholder="Primary Skill" required>
+                <button type="submit" class="submit-btn">Sign Up to Work</button>
+                <button type="button" class="back-form-btn" onclick="resetModal()">Back</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../JS/producerprofile.js"></script>
+</body>
+</html>

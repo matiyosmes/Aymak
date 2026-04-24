@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYMAK PRO - Comments</title>
+    <link rel="stylesheet" href="../CSS/producercomments.css">
+</head>
+<body>
+    <div class="layout-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">AYMAK PRO</div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item" id="navDashboard">
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item active">
+                    <div class="nav-indicator"></div>
+                    Comments
+                    <span class="notification-badge">1</span>
+                </a>
+                <a href="#" class="nav-item" id="navEditProfile">Edit Profile</a>
+                <a href="#" class="nav-item" id="navPortfolio">Manage Portfolio</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="logout-link" id="logoutBtn">Log Out</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="chat-layout">
+                <div class="contacts-list">
+                    <div class="contact-item active">
+                        <h4 class="contact-name">John Doe</h4>
+                        <p class="contact-preview">Hi, are you available...</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 class="contact-name">Betty G.</h4>
+                        <p class="contact-preview">Thanks for the video!</p>
+                    </div>
+                </div>
+
+                <div class="chat-area">
+                    <div class="chat-header">
+                        <h3 class="chat-with-name">Chat with John Doe</h3>
+                    </div>
+
+                    <div class="messages-container" id="messagesContainer">
+                        <div class="message-bubble received">
+                            <p>Hi, I saw your profile. Do you travel outside the city?</p>
+                        </div>
+                        <div class="message-bubble sent">
+                            <p>Yes, I do! What is the location?</p>
+                        </div>
+                    </div>
+
+                    <div class="input-area">
+                        <input type="text" class="message-input" id="messageInput" placeholder="Type a reply...">
+                        <button class="send-btn" id="sendBtn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../JS/producercomments.js"></script>
+</body>
+</html>

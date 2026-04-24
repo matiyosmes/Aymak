@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYMAK PICTURE - Chat</title>
+    <link rel="stylesheet" href="../CSS/chatwithproducer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AYMAK PICTURE</div>
+        <a href="#" class="back-link" id="backBtn">← Back to Profile</a>
+    </nav>
+
+    <div class="main-container">
+        <header class="chat-header">
+            <h2 class="chat-title">Chat with Alex Kebede</h2>
+            <button class="complete-btn" id="completeBtn">✔ Mark Service Completed</button>
+        </header>
+
+        <div class="messages-area" id="messagesArea">
+            <div class="message-bubble sent">
+                <p>Hi Alex, are you available on the 24th?</p>
+            </div>
+            
+            <div class="message-bubble received">
+                <p>Yes, I am! What is the location?</p>
+            </div>
+
+            <div class="message-bubble sent">
+                <p>It is at the Hilton Hotel. 4 PM.</p>
+            </div>
+
+            <div class="message-bubble received">
+                <p>Perfect. I will send you a quote shortly.</p>
+            </div>
+        </div>
+
+        <footer class="input-area">
+            <input type="text" class="message-input" id="messageInput" placeholder="Type a message...">
+            <button class="send-btn" id="sendBtn">SEND</button>
+        </footer>
+    </div>
+
+    <!-- Rating Modal -->
+    <div class="modal-overlay" id="ratingModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 class="modal-title">Rate Experience</h2>
+            <p class="modal-subtitle">How was working with Alex?</p>
+            
+            <div class="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <textarea class="review-input" id="reviewComment" placeholder="Write a comment about the service..."></textarea>
+            
+            <button class="submit-review-btn" id="submitReviewBtn">Submit Review</button>
+        </div>
+    </div>
+
+    <script src="../JS/chatwithproducer.js"></script>
+</body>
+</html>

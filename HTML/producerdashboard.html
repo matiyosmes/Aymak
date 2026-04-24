@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYMAK PRO - Dashboard</title>
+    <link rel="stylesheet" href="../CSS/producerdashboard.css">
+</head>
+<body>
+    <div class="layout-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">AYMAK PRO</div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <div class="nav-indicator"></div>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item" id="navComments">
+                    Comments
+                    <span class="notification-badge">2</span>
+                </a>
+                <a href="#" class="nav-item" id="navEditProfile">Edit Profile</a>
+                <a href="#" class="nav-item" id="navPortfolio">Manage Portfolio</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="logout-link" id="logoutBtn">Log Out</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h1 class="welcome-title">Welcome, Alex.</h1>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value" style="color: #FFD700;">24</span>
+                    <span class="stat-label">Jobs Completed</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-value" style="color: #FFD700;">4.8</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-value" style="color: #FFD700;">200,000 birr</span>
+                    <span class="stat-label">Earnings</span>
+                </div>
+            </div>
+
+            <p class="info-text">Check the Comments tab to see new messages.</p>
+        </main>
+    </div>
+
+    <script src="../JS/producerdashboard.js"></script>
+</body>
+</html>

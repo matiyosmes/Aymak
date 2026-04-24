@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYMAK PICTURE</title>
+    <link rel="stylesheet" href="../CSS/landingpage.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AYMAK PICTURE</div>
+        <a href="#" class="login-link" id="navLoginBtn">Log in</a>
+    </nav>
+
+    <div class="hero-section">
+        <h1 class="hero-title">Find the perfect producer</h1>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="mainSearchInput" placeholder="Try 'Wedding Photographer' or 'Video Editor'">
+            <button class="search-btn" id="mainSearchBtn">SEARCH</button>
+        </div>
+
+        <div class="role-selection">
+            <button class="role-btn" id="heroHireBtn">I want to hire</button>
+            <button class="role-btn" id="heroWorkBtn">I want to Work</button>
+        </div>
+    </div>
+
+    <div class="browse-section">
+        <h3 class="section-title">Browse by Category</h3>
+        <div class="category-list">
+            <button class="category-btn">Video Editing</button>
+            <button class="category-btn">Wedding</button>
+            <button class="category-btn">Commercial</button>
+            <button class="category-btn">Thumbnail Design</button>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-image-wrapper">
+                <img src="../IMAGES/16.webp" alt="Producer Image" class="card-img">
+                <span class="status-badge" style="color: #00ff00; font-size: 10px;">● Available Now</span>
+            </div>
+            <div class="card-details">
+                <h4 class="producer-name">Alex Kebede</h4>
+                <p class="producer-role">Video Editor, Colorist, Thumbnail Design</p>
+                <div class="card-stats">
+                    <span>★ 4.8</span>
+                    <span>24 Jobs</span>
+                </div>
+                <button class="view-profile-btn">VIEW PROFILE</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image-wrapper">
+                <img src="../IMAGES/17.webp" alt="Producer Image" class="card-img">
+                <span class="status-badge" style="color: #00ff00; font-size: 10px;">● Available</span>
+            </div>
+            <div class="card-details">
+                <h4 class="producer-name">Sara Tesfaye</h4>
+                <p class="producer-role">Wedding Photographer, Event Videographer</p>
+                <div class="card-stats">
+                    <span>★ 5.0</span>
+                    <span>108 Jobs</span>
+                </div>
+                <button class="view-profile-btn">VIEW PROFILE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 id="modalTitle">Welcome</h2>
+            
+            <div class="modal-options" id="modalOptions">
+                <button class="modal-btn" id="optionHireBtn">I want to hire</button>
+                <button class="modal-btn" id="optionWorkBtn">I want to work</button>
+            </div>
+
+            <form class="auth-form" id="hireForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Sign Up to Hire</button>
+                <button type="button" class="back-btn">Back</button>
+            </form>
+
+            <form class="auth-form" id="workForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="text" placeholder="Primary Skill" required>
+                <input type="text" placeholder="Other Skills (comma separated)">
+                <button type="submit" class="submit-btn">Sign Up to Work</button>
+                <button type="button" class="back-btn">Back</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../JS/landingpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYMAK PRO - Manage Portfolio</title>
+    <link rel="stylesheet" href="../CSS/manageportfolio.css">
+</head>
+<body>
+    <div class="layout-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">AYMAK PRO</div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item" id="navDashboard">
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item" id="navComments">
+                    Comments
+                    <span class="notification-badge">2</span>
+                </a>
+                <a href="#" class="nav-item" id="navEditProfile">Edit Profile</a>
+                <a href="#" class="nav-item active">
+                    <div class="nav-indicator"></div>
+                    Manage Portfolio
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="logout-link" id="logoutBtn">Log Out</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h1 class="page-title">Manage Portfolio</h1>
+
+            <div class="upload-area" id="uploadArea">
+                <h3 class="upload-title">+ Upload New Project</h3>
+                <p class="upload-desc">Drag and drop photos or videos here</p>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item">
+                    <img src="../IMAGES/B.webp" alt="Project 1" class="portfolio-img">
+                    <button class="delete-btn">DELETE</button>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../IMAGES/A.webp" alt="Project 2" class="portfolio-img">
+                    <button class="delete-btn">DELETE</button>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../IMAGES/16.webp" alt="Project 3" class="portfolio-img">
+                    <button class="delete-btn">DELETE</button>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="../IMAGES/15.webp" alt="Project 4" class="portfolio-img">
+                    <button class="delete-btn">DELETE</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../JS/manageportfolio.js"></script>
+</body>
+</html>

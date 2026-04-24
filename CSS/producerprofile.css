@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-form {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.auth-form input {
+    display: block;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    padding: 12px;
+}
+
+.back-form-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.back-link {
+    display: block;
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+    min-height: 100vh;
+}
+
+.chat-btn {
+    display: block;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+.close-modal {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.contact-card {
+    display: flex;
+    background-color: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 30px;
+    position: sticky;
+    top: 20px;
+}
+
+.contact-details {
+    display: flex;
+    border-bottom: 1px solid #333;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+.contact-hint {
+    display: block;
+    color: #888;
+    font-size: 14px;
+}
+
+.contact-row {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.contact-title {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-column {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.logo {
+    display: block;
+    color: #FFD700;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-layout {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 20px;
+}
+
+.modal-btn {
+    display: block;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.modal-btn:hover {
+    background-color: #444;
+}
+
+.modal-content {
+    display: flex;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 30px;
+    position: relative;
+    width: 90%;
+}
+
+.modal-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-overlay {
+    display: none;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+.portfolio-img {
+    display: block;
+    background-color: #333;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.portfolio-item {
+    display: block;
+    border-radius: 8px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.portfolio-section {
+    display: block;
+    margin-top: 40px;
+}
+
+.profile-bio {
+    display: block;
+    color: #aaa;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.profile-image-container {
+    display: block;
+    border-radius: 50%;
+    height: 120px;
+    overflow: hidden;
+    width: 120px;
+}
+
+.profile-img {
+    display: block;
+    background-color: #333;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.profile-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-name {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.profile-services {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.review-card {
+    display: block;
+    background-color: #111;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.review-text {
+    display: block;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.reviewer-name {
+    display: block;
+    color: #666;
+    font-size: 14px;
+}
+
+.reviews-section {
+    display: block;
+    margin-top: 40px;
+}
+
+.section-title {
+    display: block;
+    color: #FFD700;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar-column {
+    display: block;
+    flex: 1;
+}
+
+.stars {
+    display: block;
+    color: #FFD700;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.submit-btn {
+    display: block;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+.verified-badge {
+    display: inline-block;
+    border: 1px solid #FFD700;
+    border-radius: 4px;
+    color: #FFD700;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    width: fit-content;
+}
+
+@media (max-width: 732px) {
+    .main-layout {
+        flex-direction: column;
+    }
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-image-container {
+        margin: 0 auto;
+    }
+    .profile-info {
+        align-items: center;
+    }
+    .sidebar-column {
+        width: 100%;
+    }
+    
+    
+    .profile-name { font-size: 26px; }
+    .profile-services { font-size: 13px; }
+    .section-title { font-size: 18px; }
+    .contact-title { font-size: 16px; }
+    .chat-btn { font-size: 14px; }
+}
+
+@media (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+  
+    .logo { font-size: 18px; }
+    .profile-name { font-size: 22px; }
+    .profile-bio { font-size: 13px; }
+    .section-title { font-size: 16px; }
+    .contact-row { font-size: 13px; }
+    .review-text { font-size: 14px; }
+}

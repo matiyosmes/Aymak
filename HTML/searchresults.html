@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYMAK PICTURE - Search Results</title>
+    <link rel="stylesheet" href="../CSS/searchresults.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" id="logoBtn">AYMAK PICTURE</div>
+        <div class="header-actions">
+            <input type="text" class="header-search" id="headerSearchInput" value="Video Editor">
+            <div class="user-profile" id="userProfileBtn">
+                <div class="avatar-circle">M</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- New Back Button Section -->
+        <div class="navigation-header">
+            <a href="#" class="back-link" id="backHomeBtn">← Back</a>
+        </div>
+
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <h3 class="filter-main-title">FILTERS</h3>
+                
+                <div class="filter-group">
+                    <h4 class="filter-title">Location</h4>
+                    <p class="filter-value">Addis Ababa</p>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-title">Rating</h4>
+                    <p class="filter-value">4 Stars & up</p>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-title">Budget</h4>
+                    <p class="filter-value">$$ - $$$</p>
+                </div>
+            </aside>
+
+            <main class="results-grid">
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="../IMAGES/16.webp" alt="Producer Image" class="card-img">
+                        <span class="status-badge" style="color: #00ff00; font-size: 10px;">● Available Now</span>
+                    </div>
+                    <div class="card-details">
+                        <h4 class="producer-name">Alex Kebede</h4>
+                        <p class="producer-role">Video Editor, Colorist, Thumbnail Design</p>
+                        <div class="card-stats">
+                            <span>★ 4.8</span>
+                            <span>24 Jobs</span>
+                        </div>
+                        <button class="view-profile-btn">VIEW PROFILE</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="../IMAGES/17.webp" alt="Producer Image" class="card-img">
+                        <span class="status-badge" style="color: #00ff00; font-size: 10px;">● Available</span>
+                    </div>
+                    <div class="card-details">
+                        <h4 class="producer-name">Sara Tesfaye</h4>
+                        <p class="producer-role">Wedding Photographer, Event Videographer</p>
+                        <div class="card-stats">
+                            <span>★ 5.0</span>
+                            <span>108 Jobs</span>
+                        </div>
+                        <button class="view-profile-btn">VIEW PROFILE</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../JS/searchresults.js"></script>
+</body>
+</html>
