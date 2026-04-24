@@ -1,5 +1,5 @@
 # Aymak
-
+## VIEW LIVE SITE: https://matiyosmes.github.io/Aymak/
 ### AYMAK PICTURE - Freelance Producer Platform (Front-End)
 
 Developed as a final project for my Internet Programming course, this repository showcases a complete front-end web application built entirely from scratch using HTML5, CSS3, and Vanilla JavaScript. The platform, **AYMAK PICTURE**, is a dual-sided marketplace designed to bridge the gap between clients looking to hire creative talent and freelance producers (like video editors and photographers) seeking work. 
